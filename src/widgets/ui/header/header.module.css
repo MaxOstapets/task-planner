@@ -1,0 +1,14 @@
+.header {
+    display: grid;
+    grid-template-columns: var(--grid-column);
+    gap: var(--grid-gap);
+    max-width: var(--max-width);
+    align-items: center;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* grid-column: ; */
+}

@@ -1,9 +1,13 @@
 import "./globals.css";
+import { Header } from "@/src/widgets";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
