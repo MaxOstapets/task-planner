@@ -1,0 +1,16 @@
+.btn {
+    background: var(--color-primary-500);
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    transition: .15s;
+}
+
+.btn:hover {
+    background: var(--color-primary-600);
+    cursor: pointer;
+}

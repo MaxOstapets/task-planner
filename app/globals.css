@@ -40,4 +40,5 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
+    background: var(--color-neutral-white);
 }

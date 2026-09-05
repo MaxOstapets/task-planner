@@ -10,5 +10,20 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    /* grid-column: ; */
+    grid-column: 1/4;
+}
+
+.title {
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--color-primary-600);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column: 11/13;
 }

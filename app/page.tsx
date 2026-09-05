@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-    <div>
+import { HomePage } from "@/src/page-components";
 
-    </div>
-  );
+export default function Home() {
+  return <HomePage />
 }
