@@ -15,16 +15,40 @@
 }
 
 .aboutUs {
-    margin-top: 300px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    align-items: start;
-    width: var(--max-width);
+    gap: 70px;
+    align-items: flex-start;
+    margin: 300px 0 300px 160px;
 }
 
-.aboutUs:nth-child(2) {
-    width: 892px;
-    /* align-items: end; */
-    /* margin-left: 140px; */
+.aboutUs>* {
+    width: 533px;
+}
+
+.aboutUs>*:nth-child(2) {
+    width: 800px;
+    margin-left: 140px;
+}
+
+.aboutUs>*:nth-child(3) {
+    margin-left: 0;
+}
+
+.contactUs {
+    display: grid;
+    grid-template-columns: var(--grid-column);
+    gap: var(--grid-gap);
+    max-width: var(--max-width);
+    align-items: center;
+}
+
+.contactText {
+    font-family: var(--font-family-secondary);
+    font-weight: bold;
+    font-size: 33px;
+    color: var(--color-neutral-black);
+    letter-spacing: 2px;
+    grid-column: span 12;
+    text-align: center;
 }

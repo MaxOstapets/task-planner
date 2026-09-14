@@ -1,0 +1,17 @@
+.btn {
+    background: var(--color-primary-800);
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-primary);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 170px;
+    cursor: pointer;
+    transition: .15s;
+}
+
+.btn:hover {
+    background: var(--color-primary-900);
+}

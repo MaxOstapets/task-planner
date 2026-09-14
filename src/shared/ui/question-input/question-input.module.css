@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.placeholder {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    color: var(--color-primary-400);
+}
+
+.field {
+    background: var(--color-primary-400);
+    color: var(--color-neutral-white);
+    padding: 14px;
+    border-radius: 11px;
+    width: stretch;
+    border: none;
+}
+
+.field:focus {
+    outline: none;
+}

@@ -7,7 +7,7 @@ export const data: IDescription[] = [
     },
     {
         title: "Let us help",
-        mainInfo: "We’ll make sure you won’t forget anything. Life will be more organized."
+        mainInfo: "We’ll make sure you won’t forget anything. Life will be more organized"
     },
     {
         title: "Create",

@@ -1,2 +1,4 @@
 export { HeaderButton } from "./header-button"
 export { BeginButton } from "./begin-button"
+export { QuestionInput } from "./question-input"
+export { SendButton } from "./send-button"

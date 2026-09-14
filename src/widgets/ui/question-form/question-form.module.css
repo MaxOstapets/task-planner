@@ -1,0 +1,19 @@
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 60px;
+    border-radius: 28px;
+    background: var(--color-primary-600);
+    grid-column: 4/10;
+    margin-bottom: 300px;
+}
+
+.inputs {
+    width: stretch;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
