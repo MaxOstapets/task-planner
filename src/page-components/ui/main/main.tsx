@@ -3,10 +3,12 @@ import { BeginButton } from "@/src/shared"
 import { BeginDescription } from "@/src/entities"
 import { data } from "./main.data"
 import { QuestionForm } from "@/src/widgets"
+import { MainBg } from "./main-bg"
 
 export const HomePage = () => {
     return (
         <main className={s.main}>
+            <MainBg />
             <section className={s.begin}>
                 <span className={s.beginText}>We'll help to remember your plans</span>
                 <BeginButton text="Begin" type="submit" />

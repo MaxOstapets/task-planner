@@ -41,4 +41,6 @@ body {
     align-items: center;
     margin-top: 60px;
     background: var(--color-neutral-white);
+    position: relative;
+    min-height: 100vh;
 }

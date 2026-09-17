@@ -1,0 +1,205 @@
+.bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.square {
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    border-radius: 8px;
+}
+
+.square1 {
+    border: 2px, solid var(--color-secondary-200);
+}
+
+.square2 {
+    border: 2px, solid var(--color-secondary-300);
+}
+
+.square3 {
+    border: 2px, solid var(--color-primary-300);
+}
+
+.square4 {
+    border: 2px, solid var(--color-primary-600);
+}
+
+.square5 {
+    border: 2px, solid var(--color-secondary-600);
+}
+
+.square6 {
+    border: 2px, solid var(--color-secondary-400);
+}
+
+/* FIRST */
+.square:nth-child(1) {
+    top: 510px;
+    left: 25px;
+}
+
+.square:nth-child(2) {
+    top: 440px;
+    left: 77px;
+}
+
+.square:nth-child(3) {
+    top: 385px;
+    left: 20px;
+}
+
+.square:nth-child(4) {
+    top: 317px;
+    left: 80px;
+}
+
+/* SECOND */
+.square:nth-child(5) {
+    top: 120px;
+    left: 96%;
+}
+
+.square:nth-child(6) {
+    top: 190px;
+    left: 93%;
+}
+
+.square:nth-child(7) {
+    top: 300px;
+    left: 90%;
+}
+
+.square:nth-child(8) {
+    top: 270px;
+    left: 96%;
+}
+
+/* THIRD */
+.square:nth-child(9) {
+    top: 28%;
+    left: 72%;
+}
+
+.square:nth-child(10) {
+    top: 31%;
+    left: 77%;
+}
+
+.square:nth-child(11) {
+    top: 26%;
+    left: 82%;
+}
+
+.square:nth-child(12) {
+    top: 30%;
+    left: 88%;
+}
+
+/* FOURTH */
+.square:nth-child(13) {
+    top: 37%;
+    left: 16%;
+}
+
+.square:nth-child(14) {
+    top: 42%;
+    left: 9%;
+}
+
+.square:nth-child(15) {
+    top: 48%;
+    left: 10%;
+}
+
+.square:nth-child(16) {
+    top: 51%;
+    left: 12%;
+}
+
+/* FIFTH */
+.square:nth-child(17) {
+    top: 42%;
+    left: 65%;
+}
+
+.square:nth-child(18) {
+    top: 45%;
+    left: 59%;
+}
+
+.square:nth-child(19) {
+    top: 50%;
+    left: 53%;
+}
+
+.square:nth-child(20) {
+    top: 52%;
+    left: 42%;
+}
+
+/* SIXTH */
+.square:nth-child(21) {
+    top: 72%;
+    left: 19%;
+}
+
+.square:nth-child(22) {
+    top: 76%;
+    left: 10%;
+}
+
+.square:nth-child(23) {
+    top: 81%;
+    left: 16%;
+}
+
+.square:nth-child(24) {
+    top: 85%;
+    left: 4%;
+}
+
+/* SEVENTH */
+.square:nth-child(25) {
+    top: 68%;
+    left: 83%;
+}
+
+.square:nth-child(26) {
+    top: 73%;
+    left: 91%;
+}
+
+.square:nth-child(27) {
+    top: 76%;
+    left: 80%;
+}
+
+.square:nth-child(28) {
+    top: 83%;
+    left: 86%;
+}
+
+/* EIGHTH */
+.square:nth-child(29) {
+    top: 92%;
+    left: 20%;
+}
+
+.square:nth-child(30) {
+    top: 95%;
+    left: 29%;
+}
+
+.square:nth-child(31) {
+    top: 96%;
+    left: 48%;
+}
+
+.square:nth-child(32) {
+    top: 91%;
+    left: 76%;
+}
