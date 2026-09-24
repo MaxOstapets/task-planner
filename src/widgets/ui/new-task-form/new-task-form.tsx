@@ -2,6 +2,7 @@
 import s from "./new-task-form.module.css"
 import { NewTaskInput, DateInput } from "@/src/shared"
 import { FormFilters } from "@/src/entities"
+import { CreateFilter } from "@/src/features"
 
 export const NewTaskForm = () => {
     return (
@@ -24,7 +25,7 @@ export const NewTaskForm = () => {
                         <span className={s.text}>Add some filters</span>
                         <FormFilters />
                     </div>
-                    <button className={s.createNewFilter}>Create filter</button>
+                    <CreateFilter />
                 </section>
             </div>
             <button className={s.complete} type="submit">Complete</button>

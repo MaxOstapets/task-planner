@@ -1,0 +1,75 @@
+.createNewFilterBtn {
+    font-family: var(--font-family-primary);
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-primary-200);
+    background: var(--color-primary-700);
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.createNewFilterBtn:hover {
+    background: var(--color-primary-800);
+}
+
+.createFilter {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.placeholder {
+    font-family: var(--font-family-secondary);
+    font-size: 12px;
+    color: var(--color-primary-400);
+}
+
+.field {
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 10px;
+    color: var(--color-neutral-white);
+    background: var(--color-primary-400);
+    padding: 7px 9px;
+    width: 195px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.complete {
+    border-radius: 4px;
+    background: var(--color-primary-400);
+    border: none;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    padding-top: 2px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.completeIcon {
+    transition: filter .2s ease;
+}
+
+.complete:hover {
+    background: var(--color-primary-800);
+}
+
+.completeIcon:hover {
+    filter: brightness(100%) saturate(0)
+}
