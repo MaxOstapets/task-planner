@@ -1,0 +1,79 @@
+.bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.square {
+    position: absolute;
+    width: var(--square-width);
+    height: var(--square-height);
+    border-radius: var(--square-border-radius);
+}
+
+.square1 {
+    border: var(--square-weight), solid var(--color-secondary-400);
+}
+
+.square2 {
+    border: var(--square-weight), solid var(--color-secondary-600);
+}
+
+.square3 {
+    border: var(--square-weight), solid var(--color-primary-300);
+}
+
+.square4 {
+    border: var(--square-weight), solid var(--color-primary-600);
+}
+
+.square:nth-child(1) {
+    left: 33%;
+    top: 10%;
+}
+
+.square:nth-child(2) {
+    left: 57%;
+    top: 13%;
+}
+
+.square:nth-child(3) {
+    left: 70%;
+    top: 6%;
+}
+
+.square:nth-child(4) {
+    left: 3%;
+    top: 30%;
+}
+
+.square:nth-child(5) {
+    left: 6%;
+    top: 67%;
+}
+
+.square:nth-child(6) {
+    left: 20%;
+    top: 86%;
+}
+
+.square:nth-child(7) {
+    left: 40%;
+    top: 80%;
+}
+
+.square:nth-child(8) {
+    left: 70%;
+    top: 83%;
+}
+
+.square:nth-child(9) {
+    left: 95%;
+    top: 92%;
+}
+
+.square:nth-child(10) {
+    left: 90%;
+    top: 40%;
+}

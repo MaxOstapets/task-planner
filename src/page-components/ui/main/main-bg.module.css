@@ -7,9 +7,9 @@
 
 .square {
     position: absolute;
-    width: 47px;
-    height: 47px;
-    border-radius: 8px;
+    width: var(--square-width);
+    height: var(--square-height);
+    border-radius: var(--square-border-radius);
 }
 
 .square1 {
