@@ -1,1 +1,1 @@
-export { HomePage, NewTaskPage } from "./ui"
+export { HomePage, NewTaskPage, TasksPage } from "./ui"

@@ -1,0 +1,24 @@
+.countWidget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: var(--color-secondary-500);
+    color: var(--color-neutral-black);
+    gap: 50px;
+    border-radius: 12px;
+}
+
+.countTitle {
+    font-family: var(--font-family-secondary);
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.count {
+    font-family: var(--font-family-secondary);
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
