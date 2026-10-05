@@ -1,0 +1,87 @@
+.card {
+    background: var(--color-primary-700);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 24px;
+    border-radius: 13px;
+    height: fit-content;
+}
+
+.cardHat {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.title {
+    font-family: var(--font-family-primary);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--color-neutral-white);
+}
+
+.date {
+    font-family: var(--font-family-secondary);
+    font-size: 11px;
+    color: var(--color-primary-200);
+}
+
+.cardFilters {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 0;
+    margin: 0;
+}
+
+.cardTablet {
+    background: var(--color-secondary-400);
+    color: var(--color-primary-700);
+    padding: 8px 10px;
+    border-radius: 7px;
+    font-family: var(--font-family-secondary);
+    font-size: 11px;
+    width: fit-content;
+}
+
+.taskDescription {
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--color-primary-100);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cardButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    border-radius: 8px;
+    border: none;
+    gap: 10px;
+    background: var(--color-primary-400);
+    width: 100%;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.cardButton:hover {
+    background: var(--color-primary-500);
+}
+
+.buttonText {
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    font-size: 11px;
+}

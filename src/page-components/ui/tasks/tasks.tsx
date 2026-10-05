@@ -1,5 +1,6 @@
 import s from "./tasks.module.css"
-import { TaskCount } from "@/src/entities"
+import { TaskCount, TasksFilters, TaskCard } from "@/src/entities"
+import { currentTasks, completedTasks } from "./tasks.data"
 
 export const TasksPage = () => {
     return (
@@ -9,248 +10,34 @@ export const TasksPage = () => {
                     <TaskCount title="Completed tasks" count={9} />
                     <TaskCount title="Current tasks" count={6} />
                 </div>
-                <ul className={s.filters}>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                    <li className={s.tablet}>important</li>
-                </ul>
+                <TasksFilters />
             </section>
             <section className={`${s.currentTasks} ${s.tasks}`}>
                 <span className={s.sectionTitle}>Current tasks</span>
                 <div className={s.cards}>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
+                    {currentTasks.map((el) =>
+                        <TaskCard
+                            title={el.title}
+                            date={el.date}
+                            filters={el.filters}
+                            description={el.description}
+                            key={el.title}
+                            completed={el.completed} />
+                    )}
                 </div>
             </section>
             <section className={`${s.completedTasks} ${s.tasks}`}>
                 <span className={s.sectionTitle}>Completed tasks</span>
                 <div className={s.cards}>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
-                    <div className={s.card}>
-                        <div className={s.cardHat}>
-                            <span className={s.title}>Do homework</span>
-                            <p className={s.deadline}>deadline 19.09.2026</p>
-                        </div>
-                        <ul className={s.cardFilters}>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                            <li className={s.cardTablet}>important</li>
-                        </ul>
-                        <span className={s.taskDescription}>do some homework math and other. test text idgaf</span>
-                        <div className={s.buttons}>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>delete</p>
-                                <img src="/images/deleteIcon.svg" className={s.buttonIcon} />
-                            </button>
-                            <button className={s.cardButton}>
-                                <p className={s.buttonText}>complete</p>
-                                <img src="/images/completeTaskIcon.svg" className={s.buttonIcon} />
-                            </button>
-                        </div>
-                    </div>
+                    {completedTasks.map((el) =>
+                        <TaskCard
+                            title={el.title}
+                            date={el.date}
+                            filters={el.filters}
+                            description={el.description}
+                            key={el.title}
+                            completed={el.completed} />
+                    )}
                 </div>
             </section>
         </main>

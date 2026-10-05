@@ -1,3 +1,5 @@
 export { BeginDescription } from "./begin-description"
 export { FormFilters } from "./form-fitlers"
 export { TaskCount } from "./task-count"
+export { TasksFilters } from "./tasks-filters"
+export { TaskCard } from "./task-card"
