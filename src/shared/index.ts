@@ -1,1 +1,1 @@
-export { HeaderButton, BeginButton, QuestionInput, SendButton, NewTaskInput, DateInput, FilterTablet } from "./ui"
+export { HeaderButton, BeginButton, QuestionInput, SendButton, NewTaskInput, DateInput, FilterTablet, RegisterInput } from "./ui"

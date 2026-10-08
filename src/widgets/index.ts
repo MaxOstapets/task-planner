@@ -1,1 +1,1 @@
-export { Header, QuestionForm, NewTaskForm } from "./ui"
+export { Header, QuestionForm, NewTaskForm, RegisterForm } from "./ui"
